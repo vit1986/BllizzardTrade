@@ -1,0 +1,74 @@
+﻿<Window x:Class="Metelica.ADD_Subcategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ADD_Subcategory" Height="630" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="153*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Выберите категорию" Grid.Row="0" Grid.Column="0"></Label>
+        <ComboBox Name="CBCategory" DisplayMemberPath="Name" Grid.Row="0" Grid.Column="1" Margin="5,2" SelectionChanged="CBCategory_SelectionChanged"></ComboBox>
+        <Label Content="Введите название" Grid.Row="1" Grid.Column="0"></Label>
+        <TextBox Name="TBTitle" Grid.Row="1" Grid.Column="1" Margin="2" VerticalContentAlignment="Center" IsEnabled="False" TextChanged="TBTitle_TextChanged"></TextBox>
+        <Label Content="Введите основные характеристики подкатегории" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"></Label>
+        <Label Content="Характеристика 1" Grid.Row="3" Grid.Column="0"></Label>
+        <TextBox Name="Value1" Grid.Row="3" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 2" Grid.Row="4" Grid.Column="0"></Label>
+        <TextBox Name="Value2" Grid.Row="4" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 3" Grid.Row="5" Grid.Column="0"></Label>
+        <TextBox Name="Value3" Grid.Row="5" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 4" Grid.Row="6" Grid.Column="0"></Label>
+        <TextBox Name="Value4" Grid.Row="6" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 5" Grid.Row="7" Grid.Column="0"></Label>
+        <TextBox Name="Value5" Grid.Row="7" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 6" Grid.Row="8" Grid.Column="0"></Label>
+        <TextBox Name="Value6" Grid.Row="8" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 7" Grid.Row="9" Grid.Column="0"></Label>
+        <TextBox Name="Value7" Grid.Row="9" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 8" Grid.Row="10" Grid.Column="0"></Label>
+        <TextBox Name="Value8" Grid.Row="10" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 9" Grid.Row="11" Grid.Column="0"></Label>
+        <TextBox Name="Value9" Grid.Row="11" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 10" Grid.Row="12" Grid.Column="0"></Label>
+        <TextBox Name="Value10" Grid.Row="12" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 11" Grid.Row="13" Grid.Column="0"></Label>
+        <TextBox Name="Value11" Grid.Row="13" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Характеристика 12" Grid.Row="14" Grid.Column="0"></Label>
+        <TextBox Name="Value12" Grid.Row="14" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Button Name="ADD" Content="Добавить" Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" IsEnabled="False" Click="ADD_Click"></Button>
+        <Label Content="URL Comfy" Grid.Row="15" Grid.Column="0"></Label>
+        <TextBox Name="Comfy" Grid.Row="15" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="URL Rozetka" Grid.Row="16" Grid.Column="0"></Label>
+        <TextBox Name="Rozetka" Grid.Row="16" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="URL Allo" Grid.Row="17" Grid.Column="0"></Label>
+        <TextBox Name="Allo" Grid.Row="17" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="URL Eldorado" Grid.Row="18" Grid.Column="0"></Label>
+        <TextBox Name="Eldorado" Grid.Row="18" Grid.Column="1" Margin="2" VerticalContentAlignment="Center"></TextBox>
+        <Label Content="Формат ценника" Grid.Row="19" Grid.Column="0"></Label>
+        <ComboBox Name="CBFP" DisplayMemberPath="Name" Grid.Row="19" Grid.Column="1" Margin="5,2"></ComboBox>
+    </Grid>
+</Window>

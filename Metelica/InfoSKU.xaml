@@ -1,0 +1,45 @@
+﻿<Window x:Class="Metelica.InfoSKU"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InfoSKU" Height="240" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.25*"/>
+            <RowDefinition Height="1.25*"/>
+            <RowDefinition Height="1.25*"/>
+            <RowDefinition Height="1.25*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="5" Background="Aquamarine">          
+        </StackPanel>
+        <Label Grid.Row="0" Grid.Column="0" Content="ID:" FontSize="18"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Подкатегория:" FontSize="16"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Content="Бренд:" FontSize="16"></Label>
+        <Label Grid.Row="3" Grid.Column="0" Content="Модель:" FontSize="16"></Label>
+        <Label Name="LID" Grid.Row="0" Grid.Column="1" Content="ID:" FontSize="18"></Label>
+        <Label Name="LSub" Grid.Row="1" Grid.Column="1" Content="Подкатегория:" FontSize="16"></Label>
+        <Label Name="LBre" Grid.Row="2" Grid.Column="1" Content="Бренд:" FontSize="16"></Label>
+        <Label Name="LMod" Grid.Row="3" Grid.Column="1" Content="Модель:" FontSize="16"></Label>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="4" Margin="5" Background="Bisque">
+        </StackPanel>
+        <Label Grid.Row="0" Grid.Column="2" Content="Цена" FontSize="18" Grid.RowSpan="2" Margin="0,26"></Label>
+        
+        <Label Grid.Row="2" Grid.Column="2" Content="Вход" FontSize="16"></Label>
+        <Label Grid.Row="3" Grid.Column="2" Content="Наценка" FontSize="16"></Label>
+        <Label Name="LPrice" Grid.Row="0" Grid.Column="3" Content="299999" FontSize="45" FontStyle="Italic" Margin="5,15" Foreground="Green" FontFamily="ArialBold" Grid.RowSpan="2"></Label>
+        
+        <Label Name="LInput" Grid.Row="2" Grid.Column="3" Content="1500" FontSize="16" Foreground="Red"></Label>
+        <Label Name="LMarga" Grid.Row="3" Grid.Column="3" Content="20%" FontSize="16"></Label>
+        <Button Name="BEnable" Content="В наличии" Grid.Row="4" Grid.Column="0" Background="GreenYellow" Click="Button_Click"> </Button>
+        <Button Name="BPrint" Content="Печать" Grid.Row="4" Grid.Column="1" Click="BPrint_Click"></Button>
+        <Button Name="BEdit" Content="Изменить" Grid.Row="4" Grid.Column="2" Click="BEdit_Click"></Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Metelica.AnaliticSku"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AnaliticSku" Height="150" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="302*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Идет анализ данных" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></Label>
+        <ProgressBar Name="Prog" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"></ProgressBar>
+        <Label Name="Proc" Content="0%" Grid.Row="1" Grid.Column="3" Margin="5,5"></Label>
+        <Button Name="OK" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Content="OK" Margin="5" IsEnabled="False" Click="OK_Click"></Button>
+    </Grid>
+</Window>

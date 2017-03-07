@@ -1,0 +1,63 @@
+﻿<Window x:Class="Metelica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Метелица" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="146*"/>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" Grid.ColumnSpan="3">
+            <Menu>
+                <MenuItem Header="Добавить">
+                    <MenuItem Name="MI11" Header="Категорию" Click="MenuItem_Click"></MenuItem>
+                    <MenuItem Name="MI12" Header="Подкатегорию" Click="MI12_Click"></MenuItem>
+                    <MenuItem Name="MI13" Header="Бренд" Click="MI13_Click"></MenuItem>
+                    <MenuItem Name="MI14" Header="Товар" Click="MI14_Click"></MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Name="MI15" Header="Товар из файла" Click="MI15_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <Menu>
+                <MenuItem Header="Поиск">
+                    <!--<MenuItem Name="MI21" Header="Категорию" Click="MI21_Click"></MenuItem>
+                    <MenuItem Name="MI22" Header="Подкатегорию" Click="MI22_Click"></MenuItem>
+                    <MenuItem Name="MI23" Header="Бренд" Click="MI23_Click"></MenuItem>-->
+                    <MenuItem Name="MI24" Header="Товар по ID" Click="MI24_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <Menu>
+                <MenuItem Header="Мониторинг">
+                    <MenuItem Name="NewParsing" Header="Новый запрос" Click="NewParsing_Click"></MenuItem>
+                    <MenuItem Name="OldParsing" Header="Анализ цен" Click="OldParsing_Click" ></MenuItem>
+                    <MenuItem Name="EKParcing" Header="Запрос цен EK" Click="EKParcing_Click" ></MenuItem>
+                    <MenuItem Name="ResAnalitics" Header="Результаты анализа" Click="ResAnalitics_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <Menu>
+                <MenuItem Header="Сервис">
+                    <MenuItem Name="MI41" Header="Товары без аннотации" Click="MI41_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <Label Content="Категория" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"></Label>
+        <ComboBox Grid.Row="2" Grid.Column="0" Name="CBCategory" DisplayMemberPath="Name" Margin="2" SelectionChanged="CBCategory_SelectionChanged"></ComboBox>
+        <Label Content="Подкатегория" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"></Label>
+        <ComboBox Name="CBSubcategory" DisplayMemberPath="Name" Grid.Row="2" Grid.Column="1" Margin="2" SelectionChanged="CBSubcategory_SelectionChanged"></ComboBox>
+        <Label Content="Бренд" Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"></Label>
+        <ComboBox Name="CBBrend" DisplayMemberPath="Name" Grid.Row="2" Grid.Column="2" Margin="2"></ComboBox>
+        <Button Name="ShowSKUs" Content="Показать" Grid.Row="2" Grid.Column="3" Margin="50,2" Click="ShowSKUs_Click"></Button>
+        <DataGrid Name="DGS" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" MouseDoubleClick="DGS_MouseDoubleClick"></DataGrid>
+        <Button Name="PrintDataGrid" Content="Печать Листа" Grid.Column="0" Grid.Row="4" Margin="25,10" Click="PrintDataGrid_Click"></Button>
+        <Button Name="PrintPrice" Content="Печать Ценника" Grid.Column="1" Grid.Row="4" Margin="25,10" Click="PrintPrice_Click"></Button>
+    </Grid>
+</Window>
